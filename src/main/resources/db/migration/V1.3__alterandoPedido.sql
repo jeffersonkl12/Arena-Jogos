@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS pedido_item(pedido_id bigint not null, produto_id bigint not null,qtd bigint unsigned not null,primary key(pedido_id,produto_id), foreign key (pedido_id) references pedido(id), foreign key(produto_id) references jogo(id));
